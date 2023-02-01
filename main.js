@@ -1,5 +1,5 @@
-import "./css/style.css";
-import "./css/media.css";
+import "./public/css/style.css";
+import "./public/css/media.css";
 import { setupCounter } from "./counter.js";
 
 // video play function

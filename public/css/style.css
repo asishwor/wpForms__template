@@ -165,6 +165,8 @@ header {
 .banner {
   position: absolute;
   top: 390px;
+  max-height: 540px;
+  overflow: hidden;
   z-index: 100;
   box-shadow: 0 0 15px #0003;
   background-color: var(--body-bg-color);
@@ -183,14 +185,14 @@ header {
 
 .banner .fa-solid {
   color: var(--white-color);
-  padding: 5px 8px 4px 18px;
+  padding: 10px 12px 9px 23px;
   font-size: 63px;
   border: 11px solid var(--white-color);
   box-shadow: 0 0 5px #0003;
   border-radius: 50%;
   background-color: var(--body-font-color);
 }
-.banner.active .fa-solid{
+.banner.active .fa-solid {
   opacity: 0;
 }
 .banner.active:hover .fa-solid {
@@ -256,6 +258,11 @@ header {
 .feature__content {
   margin-bottom: 48px;
   text-align: center;
+}
+.feature:nth-of-type(4) .feature__content,
+.feature:nth-of-type(5) .feature__content,
+.feature:nth-of-type(6) .feature__content {
+  margin-bottom: 0;
 }
 /* Testimonials Styling */
 .testimonials__section {
@@ -334,6 +341,9 @@ header {
   margin-bottom: 100px;
   justify-content: space-between;
 }
+.sfeature__screenshots .image {
+  box-shadow: 0 0 20px #0005;
+}
 .sfeature__heading {
   margin-bottom: 100px;
   line-height: 1.5em;
@@ -357,7 +367,7 @@ header {
   border-right: 1px solid var(--border-color);
   padding-right: 50px;
 }
-.sfeature__desc{
+.sfeature__desc {
   text-align: center;
 }
 .sfeature_desc-content {
